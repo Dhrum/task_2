@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            gap: 20px; /* Ensure consistent gap between items */
+            flex-wrap: nowrap; /* Keep items in one line */
+        }
+        .item {
+            background-color: #17a2b8;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.5em;
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
+        }
+        .item:nth-child(2) {
+            background-color: #007bff;
+        }
+        .item:nth-child(3) {
+            background-color: #28a745;
+        }
+        .item img {
+            width: 4em;
+            height: auto;
+        }
+        @media (max-width: 1200px) {
+            .item {
+                font-size: 1.2em;
+            }
+            .item img {
+                width: 3.5em;
+            }
+        }
+        @media (max-width: 768px) {
+            .item {
+                font-size: 1em;
+            }
+            .item img {
+                width: 3em;
+            }
+        }
+        @media (max-width: 480px) {
+            .item {
+                font-size: 0.8em;
+            }
+            .item img {
+                width: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h2>Watch</h2>
+            <img src="watch icon.png" alt="Watch Icon">
+        </div>
+        <div class="item">
+            <h2>Shoes</h2>
+            <img src="shoe icon.png" alt="Shoes Icon">
+        </div>
+        <div class="item">
+            <h2>Bags</h2>
+            <img src="bag icon.png" alt="Bag Icon">
+        </div>
+    </div>
+</body>
+</html>
